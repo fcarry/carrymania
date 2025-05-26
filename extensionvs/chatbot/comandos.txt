@@ -1,0 +1,16 @@
+
+npm install
+Para instalar dependencias
+
+npm install -g vsce
+Para instalar empaquetador
+
+vsce package
+Para empaquetar y generar chatbot-api-ia-extension-0.0.1.vsix 
+archivo instalable 
+
+Una forma de instalar la extension si anda el comando code
+code --install-extension chatbot-api-ia-extension-0.0.1.vsix 
+
+Sino directo en e =l IDE te paras en el archivo click derecho opecion install
+Luego en comandos Developer:Reload Window
