@@ -1,5 +1,8 @@
 El repositorio contiene pruebas y prototipos usando IA, particularmente hasta el momento prototipos usando LLMs de ChatGPT y DeepSeek.
-Los diferentes prototipos buscan cubrir features diferentes:
+Los diferentes prototipos buscan cubrir features diferentes
+
+El foco es lograr realizar RAG tanto con ChatGPT mediante api y tanto con Ollama y DeepSeek R1 para correr local.
+Los diferentes oritotipos se entrenan con tu documentacion y respnden en base a ella, tiene muchas aplicaciones posibles.
 
 ##chatbotdoc-chatgpt-api
 Docker que expone una api rest para consultar al sistema RAG entrenado en tus ducumentos
@@ -32,6 +35,9 @@ Extension para generar un chat dentro de visual code que interactue con los dos 
 
 The repository contains tests and prototypes using AI, particularly so far prototypes using LLMs from ChatGPT and DeepSeek.
 The different prototypes aim to cover various features:
+
+The focus is to achieve RAG (Retrieval-Augmented Generation) both with ChatGPT via API and with Ollama and DeepSeek R1 for local execution.
+The different prototypes are trained with your documentation and respond based on it, offering many possible applications.
 
 ##chatbotdoc-chatgpt-api
 A Docker container that exposes a REST API to query the RAG system trained on your documents.
