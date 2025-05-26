@@ -2,7 +2,9 @@ El repositorio contiene pruebas y prototipos usando IA, particularmente hasta el
 Los diferentes prototipos buscan cubrir features diferentes
 
 El foco es lograr realizar RAG tanto con ChatGPT mediante api y tanto con Ollama y DeepSeek R1 para correr local.
-Los diferentes oritotipos se entrenan con tu documentacion y respnden en base a ella, tiene muchas aplicaciones posibles.
+Los diferentes prototipos se entrenan con tu documentacion y responden en base a ella, tiene muchas aplicaciones posibles.
+
+El RAG Retrieval-Augmented Generation se realiza mediante la particion de los documentos en chunks que luego son salvados a una base de datos vectorial a la cual el LLM podra usar como contexto para saber que responder.
 
 ##chatbotdoc-chatgpt-api
 Docker que expone una api rest para consultar al sistema RAG entrenado en tus ducumentos
@@ -38,6 +40,8 @@ The different prototypes aim to cover various features:
 
 The focus is to achieve RAG (Retrieval-Augmented Generation) both with ChatGPT via API and with Ollama and DeepSeek R1 for local execution.
 The different prototypes are trained with your documentation and respond based on it, offering many possible applications.
+
+The RAG (Retrieval-Augmented Generation) is performed by splitting the documents into chunks, which are then saved to a vector database that the LLM can use as context to determine the appropriate response.
 
 ##chatbotdoc-chatgpt-api
 A Docker container that exposes a REST API to query the RAG system trained on your documents.
