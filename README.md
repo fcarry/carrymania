@@ -30,8 +30,19 @@ Previamente en la carpeta /data subir tus arhivos con los que sera entrenado el 
 ##chatbotdoc-ollama-deepseek-r1-web
 Docker que expone una web  para consultar al sistema RAG entrenado en el documento PDF que le subas a la web.
 
+##chatbotdoc-database-chatgpt-api
+Docker que expone una api que permite hacer consultas en alto nivel sobre conceptos y datos de una base de datos MariaDB.
+El sistema implementa RAG usando como contexto el esquema de la base de datos el cual obtiene de forma dinamica y luego
+se usa el LLM para generar consultas SELECT y luego con el resultado responder al usuario su prompt.
+
+##chatbotdoc-database-ollama-deepseek-r1-api
+Docker que expone una api que permite hacer consultas en alto nivel sobre conceptos y datos de una base de datos MariaDB.
+El sistema implementa RAG usando como contexto el esquema de la base de datos el cual obtiene de forma dinamica y luego
+se usa el LLM para generar consultas SELECT y luego con el resultado responder al usuario su prompt.
+
 ##extensionvs
-Extension para generar un chat dentro de visual code que interactue con los dos modelos que exponen api.
+Extension para generar un chat dentro de visual code que interactue con los modelos que exponen api.
+
 
 ==========================
 
@@ -66,6 +77,14 @@ Beforehand, upload your files to the /data folder, which will be used to train t
 
 ##chatbotdoc-ollama-deepseek-r1-web
 A Docker container that exposes a web interface to query the RAG system trained on the PDF document you upload to the web interface.
+
+##chatbotdoc-database-chatgpt-api
+Docker that exposes an API allowing high-level queries about concepts and data from a MariaDB database.
+The system implements RAG using the database schema as context, which it dynamically retrieves. Then, the LLM is used to generate SELECT queries, and the results are used to respond to the user's prompt.
+
+##chatbotdoc-database-ollama-deepseek-r1-api
+Docker that exposes an API allowing high-level queries about concepts and data from a MariaDB database.
+The system implements RAG using the database schema as context, which it dynamically retrieves. Then, the LLM is used to generate SELECT queries, and the results are used to respond to the user's prompt.
 
 ##extensionvs
 An extension to create a chat within Visual Studio Code that interacts with both models exposing APIs.
