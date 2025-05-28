@@ -63,7 +63,7 @@ llm = ChatOpenAI(model=model_name, temperature=0)
 def ask_question(request: QuestionRequest):
     promptSQL = """
     1. Usa el context para responder la pregunta al final y considera que el context es el schema de la base de datos.
-    2. Si no sabes la respuesta contesta: SELECT 1;\n
+    2. Si no sabes la respuesta contesta: SELECT 0;\n
     3. Considerando el schema de la base de datos genera una consulta SQL para responder a Question
     4. Comienza tu respuesta con SELECT y finaliza con ;
     5. Es my importante que tu respuesta sea solo una consulta sql SELECT ejecutable, no le agregues mas texto como SQL al inicio ni ninguna otra cosa que no sea solo responder la consulta SQL ejecutable
