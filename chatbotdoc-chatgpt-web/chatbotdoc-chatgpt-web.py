@@ -11,7 +11,7 @@ from langchain.chains import RetrievalQA
 from langchain_openai import ChatOpenAI
 import os
 
-os.environ["OPENAI_API_KEY"] = "APY_KEY_HERE"  # Replace with your actual OpenAI API key
+#os.environ["OPENAI_API_KEY"] = "APY_KEY_HERE"  # Replace with your actual OpenAI API key
 # color palette
 primary_color = "#1E90FF"
 secondary_color = "#FF6347"

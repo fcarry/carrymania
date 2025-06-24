@@ -13,7 +13,6 @@ from sqlalchemy import text
 import json
 import os
 
-os.environ["OPENAI_API_KEY"] = "APY_KEY"
 
 DB_URL = "mysql+pymysql://chatbotuser:password123456@localhost/chatbotdb"
 engine = create_engine(DB_URL)
