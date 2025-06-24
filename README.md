@@ -38,6 +38,8 @@ se usa el LLM para generar consultas SELECT y luego con el resultado responder a
 ##extensionvs
 Extension para generar un chat dentro de visual code que interactue con los modelos que exponen api.
 
+##chatbotdoc-generator-image
+Docker que expone una web para silicitar en lenguaje natural la generacion de una imagen
 
 ==========================
 
@@ -79,4 +81,8 @@ The system implements RAG using the database schema as context, which it dynamic
 
 ##extensionvs
 An extension to create a chat within Visual Studio Code that interacts with both models exposing APIs.
+
+##chatbotdoc-generator-image
+Docker que expone una web para silicitar en lenguaje natural la generacion de una imagen
+Docker that exposes a website to facilitate the generation of an image in natural language
 
