@@ -126,7 +126,7 @@ if 'email_config' not in st.session_state:
 
 # Streamlit app title
 st.title("🤖 Agente AI con Capacidades de Email")
-st.subtitle("Agente inteligente usando Ollama Phi 3 que puede enviar correos electrónicos")
+st.markdown("#### Agente inteligente usando Ollama Phi 3 que puede enviar correos electrónicos")
 
 # Sidebar for email configuration
 st.sidebar.header("⚙️ Configuración de Email")

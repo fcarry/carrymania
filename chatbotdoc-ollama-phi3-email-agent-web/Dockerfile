@@ -1,22 +1,16 @@
 FROM ubuntu:22.04
 RUN apt-get update -y
 RUN apt-get upgrade -y
-RUN apt-get install -y curl
+RUN apt-get install -y curl ca-certificates
 RUN apt install -y python3 python3-pip python3-venv
-RUN pip install langchain
-RUN pip install streamlit
-RUN pip install langchain_community
-RUN pip install langchain_experimental
-RUN pip install sentence-transformers
+RUN pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org langchain
+RUN pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org streamlit
+RUN pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org langchain_community
+RUN pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org sentence-transformers
 RUN mkdir -p /app
 EXPOSE 8501
 RUN curl -fsSL https://ollama.com/install.sh | sh
 
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
-RUN pip install fastapi
-RUN pip install pydantic
-RUN pip install uvicorn
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 WORKDIR /app
